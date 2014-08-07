@@ -8,8 +8,7 @@ angular.module('nestedView', []).directive('nestedView', function($controller) {
       inject: '='
     },
     link: function(scope) {
-      var inject = scope.inject;
-      inject.$scope = scope;
+      var inject = angular.extend({}, scope.inject, {$scope: scope});
       $controller(scope.controller, inject);
     }
   };
