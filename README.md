@@ -1,9 +1,9 @@
 angular-nested-view
 ===================
 
-Angular directive for creating nested views
+An Angular directive for creating nested views.  
 
-Usage:
+Usage Example:
 
 
 ```HTML
@@ -25,6 +25,7 @@ myApp.controller('MainCtrl', function( $scope ){
   };
 });
 
+// address object from parent injected into nested controller.
 myApp.controller('NestedCtrl', function($scope, address){
   this.address = address;
 });
