@@ -27,7 +27,7 @@ myApp.controller('MainCtrl', function( $scope ){
   this.address = {
     city: 'Mountain View',
     state: 'CA',
-    zip: '92154'
+    zip: '94043'
   };
 });
 
